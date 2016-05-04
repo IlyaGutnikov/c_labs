@@ -1,0 +1,9 @@
+gcc -Wall -Wstrict-prototypes -ansi -pedantic hello1.c -o hello1
+
+cmake_minimum_required(VERSION 2.8.4)
+project(hello2)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
+
+set(SOURCE_FILES hello2.c)
+add_executable(hello2 ${SOURCE_FILES})
